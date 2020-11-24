@@ -1,0 +1,12 @@
+helm:
+  chart: https://github.com/lalyos/chart-cm/archive/master.tar.gz
+  values:
+    name: Krapulax
+diff:
+  comparePatches:
+  - apiVersion: v1
+    kind: ConfigMap
+    name: person
+    operations:
+    - {"op":"remove", "path":"/data/age"}
+    - {"op":"change", "path":"/data/hair", "value":"bold"}
