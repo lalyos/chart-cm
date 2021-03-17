@@ -1,2 +1,9 @@
 name: Bob
 age: 33
+# global:
+#   fleet:
+#     clusterLabels:
+#         env: dev
+#         fleet.cattle.io/cluster: cluster-ea7913f6fbc6
+# vars:
+#   title: hello world

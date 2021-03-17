@@ -5,4 +5,15 @@ metadata:
 data:
   name: "{{ .Values.name }}"
   age: "{{ .Values.age }}"
+  {{with .Values.global}}
+  {{with .fleet}}
+  {{- range $key, $val := .clusterLabels }}
+  {{ regexReplaceAll ".*/" $key ""  }}: {{ $val | quote }}
+  {{- end }}
+  {{- end }}
+  {{- end -}}
+
+  {{- range $key, $val := .Values.vars }}
+  {{ $key }}: {{ $val | quote }}
+  {{- end }}
 
