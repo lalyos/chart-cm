@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "name",
+        "age"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "default": "",
+            "title": "The name Schema",
+            "examples": [
+                "Bob"
+            ]
+        },
+        "age": {
+            "type": "integer",
+            "default": 0,
+            "title": "The age Schema",
+            "examples": [
+                33
+            ]
+        }
+    },
+    "examples": [{
+        "name": "Bob",
+        "age": 33
+    }]
+}

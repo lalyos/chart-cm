@@ -1,0 +1,12 @@
+[
+    {
+      "schemaIDs": [
+        "#/properties/name",
+        "#/properties/age"
+      ],
+      "uiSchema": {},
+      "metaData": {
+        "name": "Person"
+      }
+    }
+  ]
